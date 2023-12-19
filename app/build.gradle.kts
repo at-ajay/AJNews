@@ -43,6 +43,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
@@ -68,18 +69,18 @@ android {
 dependencies {
 
     val hiltVersion = "2.44"
-    val hiltComposeVersion = "1.0.0"
-    val roomVersion = "2.5.2"
+    val hiltComposeVersion = "1.1.0"
+    val roomVersion = "2.6.1"
     val lifecycleVersion = "2.6.2"
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion")
-    implementation("androidx.activity:activity-compose:1.7.2")
+    implementation("androidx.activity:activity-compose:1.8.1")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material3:material3-android:1.2.0-beta01")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -91,10 +92,10 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     // Material Essentials
-    implementation("androidx.compose.material:material-icons-extended:1.6.0-alpha05")
+    implementation("androidx.compose.material:material-icons-extended:1.6.0-beta02")
 
     // Navigation
-    implementation("androidx.navigation:navigation-compose:2.7.2")
+    implementation("androidx.navigation:navigation-compose:2.7.5")
 
     // Constraint Layout
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
