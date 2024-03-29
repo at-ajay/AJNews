@@ -47,4 +47,4 @@ Effortlessly find articles on specific topics or keywords using the powerful sea
 Discover information quickly and efficiently with the intuitive search functionality.
 
 
-This app uses a news api from https://newsapi.org/ to test the application get your API key and add it in the local.properties file with key "API_KEY"
+This app uses a news api from https://newsapi.org/ to test the application get your API key and add it in the local.properties file with key "API_KEY". Please note that the local.properties file will not be available while cloning the repo.
