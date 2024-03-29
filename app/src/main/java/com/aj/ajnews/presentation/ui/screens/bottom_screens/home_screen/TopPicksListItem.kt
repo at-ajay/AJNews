@@ -61,6 +61,7 @@ fun TopPicksListItem(
                     contentScale = ContentScale.Crop,
                     modifier = Modifier
                         .height(200.dp)
+                        .fillMaxWidth()
                         .clip(RoundedCornerShape(20.dp))
                 )
             } else {
@@ -70,6 +71,7 @@ fun TopPicksListItem(
                     contentScale = ContentScale.Crop,
                     modifier = Modifier
                         .height(200.dp)
+                        .fillMaxWidth()
                         .clip(RoundedCornerShape(20.dp))
                 )
             }

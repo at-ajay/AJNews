@@ -180,7 +180,6 @@ fun SettingsScreen(vm: SettingsViewModel = hiltViewModel()) {
                         focusedIndicatorColor = Color.Transparent,
                         unfocusedIndicatorColor = Color.Transparent,
                         containerColor = MaterialTheme.colorScheme.surfaceVariant,
-                        textColor = MaterialTheme.colorScheme.onSurfaceVariant,
                         cursorColor = MaterialTheme.colorScheme.primary
                     ),
                     modifier = Modifier

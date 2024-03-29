@@ -158,7 +158,6 @@ fun SearchScreen(vm: SearchViewModel = hiltViewModel()) {
                 onValueChange = { vm.onEvent(SearchScreenEvent.OnSearchTextChanged(it)) },
                 colors = TextFieldDefaults.textFieldColors(
                     containerColor = MaterialTheme.colorScheme.surfaceVariant,
-                    textColor = MaterialTheme.colorScheme.onSurfaceVariant,
                     focusedIndicatorColor = Color.Transparent,
                     unfocusedIndicatorColor = Color.Transparent,
                     focusedLeadingIconColor = MaterialTheme.colorScheme.onSurfaceVariant
