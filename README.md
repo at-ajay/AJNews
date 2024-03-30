@@ -47,4 +47,5 @@ Effortlessly find articles on specific topics or keywords using the powerful sea
 Discover information quickly and efficiently with the intuitive search functionality.
 
 
+### Note
 The API used in AJ News is from https://newsapi.org/. To test the application get an API key from https://newsapi.org/ and replace it with "YOUR_API_KEY" in local.properties file.
