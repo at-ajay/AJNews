@@ -176,10 +176,11 @@ fun SettingsScreen(vm: SettingsViewModel = hiltViewModel()) {
                     onValueChange = {},
                     trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = vm.isExpanded) },
                     readOnly = true,
-                    colors = TextFieldDefaults.textFieldColors(
+                    colors = TextFieldDefaults.colors(
                         focusedIndicatorColor = Color.Transparent,
                         unfocusedIndicatorColor = Color.Transparent,
-                        containerColor = MaterialTheme.colorScheme.surfaceVariant,
+                        focusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
+                        unfocusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
                         cursorColor = MaterialTheme.colorScheme.primary
                     ),
                     modifier = Modifier
